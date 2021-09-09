@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamal Kumar,Manoj Kumar" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="stack.js"></script>
+    <script src="main.js" type="module"></script>
+    <title>Text Editor</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <i class="bi bi-textarea-t"></i> <span> ext editor</span> 
+    </nav>
+    <div id="container">
+        <div class="text-box" >
+            <p>
+                Type in the box below
+            </p>
+            <textarea class="form-control" id="comment" style="height: 100%;">
+            </textarea>
+            
+        </div>
+        <div class="stack-box" style="overflow-y: scroll">
+            <span id="temptext" >
+                Sequence of operations will be shown here !
+            </span>
+        </div>
+    </div>
+
+    <div class="actionbox" >
+        
+        <button type="button" class="btn btn-success" id="undo"><i class="bi bi-arrow-counterclockwise"></i> Undo</button>
+        
+        <button type="button" class="btn btn-danger" id="clear"><i class="bi bi-trash"></i> Clear</button>
+    </div>
+    <div class="credit">
+        made with <i style="color:red" class="bi bi-heart-fill">  </i> 
+    </div>
+</body>
+
+</html>
